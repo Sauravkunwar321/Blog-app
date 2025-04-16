@@ -111,7 +111,7 @@ export default function Blogs() {
           </button>
         </div>
 
-        {/* Blog Form */}
+        
         <form
           onSubmit={handleSubmit}
           className="bg-white p-6 rounded-xl shadow space-y-4 mb-10"
@@ -129,7 +129,7 @@ export default function Blogs() {
             placeholder="Description"
             value={form.description}
             onChange={(e) => setForm({ ...form, description: e.target.value })}
-            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300"
+            className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring focus:ring-blue-300 resize-none"
           />
           <input
             placeholder="Image URL"
@@ -142,7 +142,7 @@ export default function Blogs() {
           </button>
         </form>
 
-        {/* Blogs Grid */}
+        
         <div className="grid md:grid-cols-2 gap-6">
           {blogs.map((blog, index) => (
             <div
